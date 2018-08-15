@@ -33,7 +33,7 @@ $('#avatar').change(function() {
       this.value = '';
       return;
     }
-    console.log(file.size, file.type);
+    // console.log(file.size, file.type);
     reader.onload = function(e) {
       this.value = '';
       $('form .preview').attr('src', e.target.result);
