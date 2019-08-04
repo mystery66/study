@@ -8,11 +8,11 @@ function getMaxDiff(arr) {
     if (arr[i] > max) {
       max = arr[i];
     }
-  }
+  } 
   const newArr = new Array(max- min + 1);
   for(let i =0; i< arr.length; i++) {
     newArr[arr[i]-min] = arr[i];
-  }
+  } 
   console.log(newArr);
   let result = k = 0;
   for(let i = 0; i< newArr.length; i++) {
